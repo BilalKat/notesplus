@@ -1,0 +1,20 @@
+body {
+    margin: auto;
+    width: 35%;
+}
+
+#title, #noteText{
+    border: 2px solid grey;
+
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3xp;
+    -moz-border-radius: 3px;   
+}
+#title{
+height: 33px;
+width: 539px;
+}
+#button{
+width: 20%;
+}

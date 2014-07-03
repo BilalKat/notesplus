@@ -43,11 +43,11 @@ else{
 	if ($reg){
  		if($em == $em2){
 			//check if user alredy exist
-			$u_check = mysql_query("SELECT username FROM users WHERE username = '$un' ");
+			$u_check = mysql_query("SELECT username FROM bootcamp2014_01_users WHERE username = '$un' ");
 			//count the number of rows where username = $un
 			$check = mysql_num_rows($u_check);
 			//check whether email already exist in the database
-			$e_check = mysql_query("SELECT email FROM users WHERE email='$em'");
+			$e_check = mysql_query("SELECT email FROM bootcamp2014_01_users WHERE email='$em'");
 			//count the number of rows returned
 			$email_check = mysql_num_rows($e_check);
 				if ($check == 0){ 
@@ -71,7 +71,7 @@ else{
 								else{
 									 $pswd = encryptPassword($password);
 									$pswd2 = encryptPassword($password2);
-									$query 	= mysql_query("INSERT INTO users VALUES ('', '$fn', '$ln', '$un', '$em', '$pswd', '$d', '0')");
+									$query 	= mysql_query("INSERT INTO bootcamp2014_01_users VALUES ('', '$fn', '$ln', '$un', '$em', '$pswd', '$d', '0')");
 									die("<h2>Welcome to the Vankra's world</h2>Login to your account to get started...");
 									}
 								}

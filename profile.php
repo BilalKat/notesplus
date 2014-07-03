@@ -12,7 +12,7 @@
 		$username = mysql_real_escape_string($_GET['u']);
 			if(cytype_alnum($username)){
 				//check user exist
-				$check = mysql_query("SELECT username, firstname FROM users WHERE username= '$username'");
+				$check = mysql_query("SELECT username, firstname FROM bootcamp2014_01_users WHERE username= '$username'");
 					if(mysql_num_rows($check)=== 1){
 						$get = mysql_fetch_assoc($check);
 						$username = $get['username'];

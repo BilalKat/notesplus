@@ -11,7 +11,7 @@
 			$noteText	  = $_POST['noteText'];
 	
 		
-		$query ="UPDATE users SET title='$title', noteText='$noteText'
+		$query ="UPDATE bootcamp2014_01_notes SET title='$title', noteText='$noteText'
 			WHERE id='$id'";
 			
 		$result = mysql_query($query)

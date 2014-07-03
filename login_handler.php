@@ -19,7 +19,7 @@ else{
 			$password_login = preg_replace('#[^A-Za-z0-9]#i', '', $_POST["password_login"]);  //flter everything but numbers and letters	
              $password_login = encryptPassword($password_login);
             //$password_login = ($password_login);
-			$sql = mysql_query("SELECT id FROM users WHERE username = '$user_login' AND password = '$password_login' LIMIT 1" );
+			$sql = mysql_query("SELECT id FROM bootcamp2014_01_users WHERE username = '$user_login' AND password = '$password_login' LIMIT 1" );
 			// check for their existance
 			$userCount = mysql_num_rows($sql); 	  //conut the number of rows returned
 				if($userCount == 1){

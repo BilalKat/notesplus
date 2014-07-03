@@ -14,7 +14,7 @@
 	
 			$password = encryptPassword($password);
 		
-			$query ="INSERT INTO notes(title, noteText)
+			$query ="INSERT INTO bootcamp2014_01_notes(title, noteText)
 					VALUES('$title','$noteText')";
 					
 			$result = mysql_query($query)

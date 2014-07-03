@@ -16,7 +16,7 @@
 		
 			$connection = openDB();
 			
-			$query = "SELECT * FROM notes WHERE id='$id'";
+			$query = "SELECT * FROM bootcamp2014_01_notes WHERE id='$id'";
 			
 			$result = mysql_query($query)
 			or die("querry failed : ".mysql_error());

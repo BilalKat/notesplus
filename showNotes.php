@@ -7,7 +7,7 @@
 			
 			$connection = OpenDB();
 			
-			$query = "SELECT * FROM notes";
+			$query = "SELECT * FROM bootcamp2014_01_notes";
 			
 			$result = mysql_query($query)
 				or die("query failed : ".mysql_error());

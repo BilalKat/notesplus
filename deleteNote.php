@@ -18,7 +18,7 @@
 			
 			foreach($id as $i){
 				
-				$query = "DELETE FROM notes WHERE id=$i";
+				$query = "DELETE FROM bootcamp2014_01_notes WHERE id=$i";
 				$results = mysql_query($query)
 				or die("query failed: ".mysql_error());
 			}

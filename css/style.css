@@ -1,0 +1,54 @@
+*{
+    marigin:0px;
+    padding:0px;
+}
+body{
+    background-color: #fff;
+}
+#row1{
+    position: absolute;
+    top: 120px;
+    left: 300px;
+}
+#reg{
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    width: 120px;
+    background-color:blue;    
+}
+
+.postForm{
+	float:right;
+	width:560px;
+	height:80px;
+	background-color:#f3f6f9;
+	padding:5px;
+}
+.profilePosts{
+	float:right;
+	width:560px;
+	height:414px;
+	background-color:#DCE5EE;
+	padding:5px;
+}
+.profilePosts hr{
+	background-color:DCE5EE;
+	height:1px;
+	border:0px;
+}
+.posted_by{
+	font-weight:800;
+	color:#000;
+	float:left;
+}
+.posted_by a{
+	font-weight:800;
+	color:#000;
+	text-decoration:non e;
+}
+.posted_by a:hover{
+	font-weight:800;
+	color:#000;
+	text-decoration:underline;
+}

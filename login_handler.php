@@ -27,8 +27,8 @@ else{
 						$id = $row["id"];
 					}
 					$SESSION['user_login'] = $user_login;
-					//header("location: home.php");
-                    echo "Welcome to noteplus";
+					header("location: note.php");
+                    
 					exit() ;
 				}
 				else{

@@ -1,7 +1,9 @@
 <html>
-	</body>
+	<body>
 		<?php
+        
 			include("config.php");
+echo "Its working";
 			/*include("header.php");*/
 			include("functions.php"); 
 			
@@ -9,6 +11,7 @@
 			
 			$query = "SELECT * FROM bootcamp2014_01_notes";
 			
+
 			$result = mysql_query($query)
 				or die("query failed : ".mysql_error());
 				

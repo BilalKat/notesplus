@@ -28,7 +28,7 @@
 			<table>
 				<tr>
 					<td><label for="title"></label></td>
-					<td><input type="text" name="title" id="title" maxlength="50" size="84"  placeholder="Title" value="<?php echo $row['title'];?>"/>                       </td>
+					<td><input type="text" name="title" id="title" maxlength="50" size="84"  placeholder="Title" value="<?php echo                          $row['title'];?>"/></td>
 				</tr>
 			
 					<tr>

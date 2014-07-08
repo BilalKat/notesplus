@@ -1,17 +1,22 @@
-        <?php include ('header.php');?>
-        <div id="row1">
-		<table>
-			<tr>
-				<td width="60%" valign="top">
-					<h2>Already a member? <br/> <br/>  Sign in below!</h2>
-					<form action="login_handler.php" method="POST">
-                        <labe for="user_login">Username</labe>
-						<input type="text" name="user_login" size="25" placeholder="Username"/><br/><br/>
-                        <label for="password_login">Password</label>
-						<input type="text" name="password_login" size="25" placeholder="Password"/><br/><br/>
-						<input type="submit" name="login" value="Login!"><br/><br/>
-					</form>
-				</td>	
-			</tr>
-		</table></div>
-<?php //include ("./inc/footer.inc.php"); ?>		
+<!doctype html>
+<html>
+	<meta charset="utf-8">
+		<head>
+	<body>
+		<form action="login_handler.php" method="post">
+			<table>
+				<tr>
+					<td><label for="username">username:</label></td>
+					<td><input type="text" name="username" id="username" placeholder="Full name"/></td><br>
+					</tr>
+					<tr>
+					<td><label for="password">password:</label></td>
+					<td><input type="password" name="password" id="password" placeholder="Password"/></td><br>
+					</tr>
+					<tr>
+			          <td><input type="submit" value="login"></td>
+					</tr> 
+			</table>			  
+		</form>
+	</body>
+</html>		

@@ -4,16 +4,12 @@
 		<?php
 
 			include 'functions.php';
-			include 'config.php';
 			$connection = OpenDB();
 			
 			$title = $_POST['title'];
 			$noteText = $_POST['noteText'];
 	
 			
-	
-			$password = encryptPassword($password);
-		
 			$query ="INSERT INTO bootcamp2014_01_notes(title, noteText)
 					VALUES('$title','$noteText')";
 					

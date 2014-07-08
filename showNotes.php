@@ -1,19 +1,22 @@
 
 		<?php
         
-			include("config.php");
+			
 			include("header.php");
 			include("functions.php"); 
 			
 			$connection = OpenDB();
+            $id = $_POST['id'];
+            $title = $_POST['title'];
 			
-			$query = "SELECT * FROM bootcamp2014_01_notes";
+			$query = "SELECT id FROM bootcamp2014_01_notes WHERE id = '$id'";
 			
 
 			$result = mysql_query($query)
 				or die("query failed : ".mysql_error());
 				
 			mysql_close($connection);
+            $title = $_POST['title'];
 		?>
 	
 			<form action="deleteNote.php" method="post">
@@ -22,9 +25,9 @@
 			
 				<tr>
 				<th></th>
-				<th>Title</th>
-				<th>NoteText</th>
-				<th></th>
+				<th><?php echo "$title";?></th>
+				<th><img src="img/pencil.png"width="40px"></th>
+				<th><img src="img/bin.jpg"width="40px"></th>
 				<th> </th>
 			
 				</tr>

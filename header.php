@@ -7,6 +7,6 @@
     </title>
     <meta name="desrciption" content="Notesplus">
     <meta name="author" content="sitepoint">
-    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="form.css" type="text/css"/>
 </head>
     <body>

@@ -1,6 +1,6 @@
 <?php
-			include 'connection.php';
-		include 'Header.php';
+                include 'functions.php';
+		      include 'Header.php';
 		
 			
 			
@@ -18,7 +18,7 @@
 			
 			foreach($id as $i){
 				
-				$query = "DELETE FROM bootcamp2014_01_notes WHERE id=$i";
+				$query = "DELETE FROM bootcamp2014_01_notes WHERE id= '$i'";
 				$results = mysql_query($query)
 				or die("query failed: ".mysql_error());
 			}
@@ -30,6 +30,6 @@
 			}
 ?>
 		<p><?php echo $message;?></p>
-		<a href="viewNote.php">back to Notes</a>
+		<a href="showNotes.php">back to Notes</a>
 	</body>
 </html>

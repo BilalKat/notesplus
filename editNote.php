@@ -1,18 +1,8 @@
-<html>
-<head>
-    
-  <link rel="stylesheet" href="form.css" type="text/css"/>
-    
-</head>
-    <body>
+
 	<?php
 
-        /*	include 'header.php';*/
-			include 'functions.php'; 
-			include 'config.php'; 
-		$id = $_REQUEST['id']; 
-		
-	
+            include 'header.php';
+			include 'functions.php';  
 		
 			$connection = openDB();
 			
@@ -33,18 +23,16 @@
 			
 					<tr>
 					<td><label for="noteText"></label></td>
-					<td>   <textarea name="noteText" id="noteText" cols="64" rows="20" maxlength="500" placeholder=" NoteText"  value="<?php                                    echo $row['noteText'];?>"></textarea></td>
+					<td>   <textarea name="noteText" id="noteText" cols="64" rows="20" maxlength="500" placeholder=" NoteText"                                     value="<?php  echo $row['noteText'];?>"></textarea></td>
 				    </tr>
 
-				
-			
 				<tr>
 					<td><input type="hidden" name="id" value="<?php echo $id;?>"></td>
 				</tr>
 					<tr>
 				<td colspan="2" align="center">
-					<input type="submit" value="   save   "/>
-					<input type="reset" value="  cancel   "/>
+					<input type="submit" value="save"/>
+					<input type="reset" value="cancel"/>
 				</td>
 				</tr>
 			</table>

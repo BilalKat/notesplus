@@ -22,4 +22,5 @@ session_start();
 
 
 ?>
-<a href="showUser.php">Users</a>
+Thanks for registering now 
+<a href="login.php">login</a>

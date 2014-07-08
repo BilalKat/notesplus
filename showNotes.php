@@ -1,10 +1,8 @@
-<html>
-	<body>
+
 		<?php
         
 			include("config.php");
-echo "Its working";
-			/*include("header.php");*/
+			include("header.php");
 			include("functions.php"); 
 			
 			$connection = OpenDB();

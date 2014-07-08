@@ -1,11 +1,16 @@
-<html>
+<!doctype html>
+<html lang="en-us">
 <head>
-    
-  <link rel="stylesheet" href="form.css" type="text/css"/>
-    
+    <meta charset="utf-8">
+    <title>
+        Notesplus
+    </title>
+    <meta name="desrciption" content="Notesplus">
+    <meta name="author" content="sitepoint">
+   <link rel="stylesheet" href="form.css" type="text/css"/>
 </head>
-    
     <body>
+
 	   <form action="noteHandler.php" method="post">
             <input id="title" type="text" name="title" placeholder="Title"  maxlength="50"><br/>
             <textarea name="noteText" id="noteText" cols="64" rows="20" maxlength="500" placeholder="enter noteText"></textarea>

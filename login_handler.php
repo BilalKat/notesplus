@@ -34,7 +34,7 @@
 			session_start();
 			$_SESSION['isLoggedIn']	=	"true";
 			$_SESSION['username']	=	$row['username'];
-			
+			$_SESSION['userId']     =    $row['id'];
 			header("location:http://localhost/notesplus/showNotes.php");
 			
 		}

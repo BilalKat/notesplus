@@ -8,7 +8,7 @@
 		
 			$id           = $_POST['id']; 
 			$title        = $_POST['title'];
-			$noteText	  = $_POST['noteText'];
+			$noteText	  = $_REQUEST['noteText'];
 	
 		
 		$query ="UPDATE bootcamp2014_01_notes SET title='$title', noteText='$noteText'

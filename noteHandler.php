@@ -8,10 +8,10 @@
 			
 			$title = $_POST['title'];
 			$noteText = $_POST['noteText'];
-	
+	       session_start();
+           $userId =  $_SESSION['userId'];  
 			
-			$query ="INSERT INTO bootcamp2014_01_notes(title, noteText)
-					VALUES('$title','$noteText')";
+			$query ="INSERT INTO bootcamp2014_01_notes(title, noteText,users_id) VALUES('$title','$noteText','$userId')";
 					
 			$result = mysql_query($query)
 			or die("query failed : ".mysql_error());

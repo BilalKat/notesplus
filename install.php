@@ -17,7 +17,7 @@
   `email` VARCHAR(50) NULL,
   `gender` VARCHAR(1) NULL,
   `active` TINYINT(1) NULL,
-  `activaitionDate` DATETIME NULL,
+  `activationDate` DATETIME NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB" ;
     
@@ -28,14 +28,14 @@ ENGINE = InnoDB" ;
 	
 	$query	= "CREATE TABLE IF NOT EXISTS `notesplus`.`bootcamp2014_01_notes` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `tittle` VARCHAR(200) NULL,
+  `title` VARCHAR(200) NULL,
   `noteText` TEXT NULL,
   `date` DATETIME NULL,
-  `users_id INT` INT NOT NULL,
+  `users_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_notes_users_idx` (`users_id INT` ASC),
+  INDEX `fk_notes_users_idx` (`users_id` ASC),
   CONSTRAINT `fk_notes_users`
-    FOREIGN KEY (`users_id INT`)
+    FOREIGN KEY (`users_id`)
     REFERENCES `notesplus`.`bootcamp2014_01_users` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)

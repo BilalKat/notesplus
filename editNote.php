@@ -1,19 +1,21 @@
-
-	<?php
+<?php
 
             include 'header.php';
 			include 'functions.php';  
 		
 			$connection = openDB();
-			
-			$query = "SELECT * FROM bootcamp2014_01_notes WHERE id='$id'";
+			session_start();
+           $userId =  $_SESSION['userId'];
+            $id = $_REQUEST['id'];
+
+			$query = "SELECT * FROM bootcamp2014_01_notes WHERE id ='$id'" ;
 			
 			$result = mysql_query($query)
 			or die("querry failed : ".mysql_error());
 			
 			$row = mysql_fetch_array($result);
 	
-	?>
+?>
 		<form action="editNoteHandler.php" method="post">
 			<table>
 				<tr>

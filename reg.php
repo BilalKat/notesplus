@@ -39,7 +39,7 @@
 			</tr>
              <tr>
                        <td> <label for="activationDate">Activation Date</label></td>
-                       <td> <input type="Date" name="activationDate" id="activationDate"</td>
+                       <td> <input type="Datetime-local" name="activationDate" id="activationDate"</td>
             </tr>
             <tr><td> <input type="submit" value="send"></td></tr>
             </table>

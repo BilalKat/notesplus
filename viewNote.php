@@ -16,7 +16,7 @@
 			$row = mysql_fetch_array($result);
 	
 ?>
-		<form action="editNoteHandler.php" method="post">
+		<form action="viewNote_handler.php" method="post">
 			<table>
 				<tr>
 					<td><label for="title"></label></td>
@@ -25,7 +25,7 @@
 			     
 					<tr>
 					<td><label for="noteText"></label></td>
-					<td>   <textarea name="noteText" id="noteText" cols="64" rows="20" maxlength="500" placeholder=" NoteText"                                     ><?php  echo $row['noteText'];?></textarea></td>
+					<td>   <textarea name="noteText" id="noteText" readonly cols="64" rows="20" maxlength="500" placeholder=" NoteText"                                     ><?php  echo $row['noteText'];?></textarea></td>
 				    </tr>
 
 				<tr>
@@ -33,8 +33,8 @@
 				</tr>
 					<tr>
 				<td colspan="2" align="center">
-					<input type="submit" value="save"/>
-					<input type="reset" value="cancel"/>
+					<a href="showNotes.php">Back</a>&nbsp;&nbsp;&nbsp;
+					<a href="note.php">Add new note</a>
 				</td>
 				</tr>
 			</table>

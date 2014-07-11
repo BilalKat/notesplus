@@ -25,7 +25,10 @@
 
 			
 				<tr>
-				
+				<th></th>
+				<th>Title</th>
+				<th>Edit</th>
+				<th>Delete</th>
 				
 				
 				
@@ -37,10 +40,10 @@
 					while($row = mysql_fetch_array($result)){
 						echo("<tr>");
 							echo('<td><input type="checkbox" name="id[]" value="'.$row['id'].'"/></td>'); 
-							echo("<td>".$row['title']."</td>");
+							echo('<td><a href="viewNote.php?id='.$row['id'].'">'.$row['title'].'</a></td>');
 						//	echo("<td>".$row['noteText']."</td>");
-							echo('<td><a href="editNote.php?id='.$row['id'].'"><img src="img/pencil.png"width="20px"></a></td>');
-							echo('<td><a href="deleteNote.php?id='.$row['id'].'"><img src="img/bin.jpg"width="20px"></a></td>');
+							echo('<td><a href="editNote.php?id='.$row['id'].'"><img src="img/pencil.png"width="30px"></a></td>');
+							echo('<td><a href="deleteNote.php?id='.$row['id'].'"><img src="img/bin.jpg"width="30px"></a></td>');
 					
 						echo("</tr>");
 					}
@@ -50,6 +53,7 @@
                     <button><a href="note.php">Create New Note</a></button>
                    
 					<input type="submit" value="delete"/>  
+                    <a href="login.php">Logout</a>
 		</form>
 
 	

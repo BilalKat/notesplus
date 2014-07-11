@@ -1,11 +1,12 @@
 body {
     margin: auto;
     width: 35%;
+    background-color: #DCE5EE;
 }
 
 #title, #noteText{
-    border: 2px solid grey;
-
+    border: 2px solid green;
+    
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -o-border-radius: 3xp;
@@ -17,4 +18,8 @@ width: 539px;
 }
 #button{
 width: 20%;
+}
+a{
+    text-decoration: none;
+    color: blue;
 }

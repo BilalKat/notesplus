@@ -40,7 +40,7 @@
 		}
 		else{
 		//no match found::go back to login form
-			header("location:http://localhost/ntesplus/login.php");
+			header("location:http://localhost/notesplus/login.php");
 		}
 		
 		closeDB($connection);

@@ -1,4 +1,31 @@
-<?php
+<?php include('header.php');?>
+
+
+<body class="body">
+
+	<header class="mainheader">
+		<nav><ul>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="reg.php">Register</a></li>
+			<li><a href="login.php">login</a></li>
+
+		</ul></nav>
+	</header>
+	
+	<div class="maincontent">
+		<div class ="content">
+			<article class="topcontent">
+				<header>
+					<!--<h2><a href="#" title="First post">First post</a></h2>-->
+				</header>
+				
+				<footer>
+					<p class ="post-info">
+				</footer>
+				
+				<content>
+					<p class="p">
+                        	<?php
 
             include 'header.php';
 			include 'functions.php';  
@@ -33,12 +60,43 @@
 				</tr>
 					<tr>
 				<td colspan="2" align="center">
-					<a href="showNotes.php">Back</a>&nbsp;&nbsp;&nbsp;
-					<a href="note.php">Add new note</a>
+					<button><a href="note.php">Add new note</a></button>
+					<button><a href="editNote.php?id=<?php echo $id;?>">Edit note</a></button>
 				</td>
 				</tr>
 			</table>
 		</form>
+
+						
+				</content>
+			</article>
+			
+			
+		</div>
+	</div>
+	<aside class="top-sidebar">
+		<article>
+             <p><a href="#">Download notesplus</a></p>    
+
+		</article>
+	</aside>
 	
-	</body>
+	<aside class="middle-sidebar">
+        
+		<article>
+		<img class="bootcamp" src="img/bt.jpg">
+		</article>
+        <img class="social" src="img/facebook.jpg">
+        <img class="social" src="img/twitter.jpg">
+        <img class="social" src="img/whatsapp.jpg">
+        
+        
+	</aside>
+	
+
+	<footer class="mainfooter">
+   <p class="p">copyright&copy ITvarsity bootcamp 2014 (Sahal Motala , Haroon Vankra)</p>
+	</footer>
+</body>
+
 </html>

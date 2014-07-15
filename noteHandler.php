@@ -21,6 +21,6 @@
 		?>
 		<br/>
 		<p>1 note added</p>
-		<a href="showNotes.php">Show Notes</a>
+		<button><a href="showNotes.php">Show Notes</a></button>
 	</body>
 </html> 

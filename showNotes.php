@@ -46,7 +46,7 @@
            $userId =  $_SESSION['userId']; 
                
 			
-			$query = "SELECT * FROM bootcamp2014_01_notes WHERE users_id ='$userId'" ;
+			$query = "SELECT * FROM bootcamp2014_01_notes WHERE users_id ='$userId' ORDER BY date DESC" ;
 			
 
 			$result = mysql_query($query)
@@ -61,7 +61,7 @@
 
 			
 				<tr>
-				<th></th>
+                <th></th>    
 				<th>Title</th>
 				<th>Edit</th>
 				<th>Delete</th>
@@ -75,6 +75,7 @@
 				
 					while($row = mysql_fetch_array($result)){
 						echo("<tr>");
+                            
 							echo('<td><input type="checkbox" name="id[]" value="'.$row['id'].'"/></td>'); 
 							echo('<td><a href="viewNote.php?id='.$row['id'].'">'.$row['title'].'</a></td>');
 						//	echo("<td>".$row['noteText']."</td>");
@@ -95,28 +96,7 @@
 						
 				</content>
 			</article>
-			
-			<!--article class="bottomcontent">
-				<header>
-				
-				</header>
-				
-				<footer>
-					<p class ="post-info"></p>
-				</footer>
-				
-				<content><p class="p">
-					Allow us to show you the way…
 
-We understand that choosing a career can be a difficult and daunting task, and finding the right information to assist you in making an informed decision isn’t easy.
-
-That is why IT varsity offers you absolutely free career guidance. On this page we’ve listed a few of the most commonly asked questions regarding careers, along with our answers in plain and simple language.
-
-If you have a question that is not here, please feel free to contact us to chat – we will be happy to assist!
-
-For a quick read on the subject of IT careers, check out our Infographic: Why IT at IT varsity?</p>
-				</content>
-			</article-->
 
 		</div>
 	</div>

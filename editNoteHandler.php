@@ -37,9 +37,9 @@
 			$id           = $_POST['id']; 
 			$title        = $_POST['title'];
 			$noteText	  = $_REQUEST['noteText'];
-	
+	       $currentDate    = date("Y-m-d");    
 		
-		$query ="UPDATE bootcamp2014_01_notes SET title='$title', noteText='$noteText' WHERE id='$id'";
+		$query ="UPDATE bootcamp2014_01_notes SET title='$title', noteText='$noteText', date='$currentDate' WHERE id='$id' ";
 			
 		$result = mysql_query($query)
 		or die("query failed : ".mysql_error());
@@ -50,26 +50,7 @@
 				</content>
 			</article>
 			
-			<!--article class="bottomcontent">
-				<header>
-				
-				</header>
-				
-				<footer>
-					<p class ="post-info"></p>
-				</footer>
-				
-				<content><p class="p">
-					Allow us to show you the way…
-
-We understand that choosing a career can be a difficult and daunting task, and finding the right information to assist you in making an informed decision isn’t easy.
-
-That is why IT varsity offers you absolutely free career guidance. On this page we’ve listed a few of the most commonly asked questions regarding careers, along with our answers in plain and simple language.
-
-If you have a question that is not here, please feel free to contact us to chat – we will be happy to assist!
-
-For a quick read on the subject of IT careers, check out our Infographic: Why IT at IT varsity?</p>
-				</content>
+							</content>
 			</article-->
 
 		</div>

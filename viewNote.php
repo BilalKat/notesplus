@@ -1,4 +1,5 @@
 <?php include('header.php');?>
+<?php include('functions.php');?>
 
 
 <body class="body">
@@ -27,9 +28,7 @@
 					<p class="p">
                         	<?php
 
-            include 'header.php';
-			include 'functions.php';  
-		
+           
 			$connection = openDB();
 			//session_start();
            //$userId =  $_SESSION['userId'];
@@ -47,7 +46,7 @@
 			<table>
 				<tr>
 					<td><label for="title"></label></td>
-					<td><input type="text" name="title" id="title" maxlength="50" size="84"  placeholder="Title" value="<?php echo                          $row['title'];?>"/></td>
+					<td><input type="text" name="title" id="title" readonly maxlength="50" size="84"  placeholder="Title" value="<?php echo                          $row['title'];?>"/></td>
 				</tr>
 			     
 					<tr>
@@ -60,8 +59,9 @@
 				</tr>
 					<tr>
 				<td colspan="2" align="center">
-					<button><a href="note.php">Add new note</a></button>
-					<button><a href="editNote.php?id=<?php echo $id;?>">Edit note</a></button>
+                    <input type="submit" value="save">
+					<!--button><a href="note.php">Add new note</a></button>
+					<button><a href="editNote.php?id=<?php echo $id;?>">Edit note</a></button-->
 				</td>
 				</tr>
 			</table>

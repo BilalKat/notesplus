@@ -27,8 +27,8 @@
 			$noteText = $_POST['noteText'];
 	       //session_start();
            $userId =  $_SESSION['userId'];  
-			
-			$query ="INSERT INTO bootcamp2014_01_notes(title, noteText,users_id) VALUES('$title','$noteText','$userId')";
+			$currentDate = date("Y-m-d H:i:s");
+			$query ="INSERT INTO bootcamp2014_01_notes(title, noteText,users_id,date) VALUES('$title','$noteText','$userId','$currentDate')";
 					
 			$result = mysql_query($query)
 			or die("query failed : ".mysql_error());

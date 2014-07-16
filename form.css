@@ -1,0 +1,38 @@
+body {
+    margin: auto;
+    width: 35%;
+    background-color: #DCE5EE;
+}
+
+#title, #noteText{
+    border: 2px solid green;
+    
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3xp;
+    -moz-border-radius: 3px;   
+}
+#title{
+height: 33px;
+width: 539px;
+}
+#button{
+width: 20%;
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+button{
+    background-color: #fff;
+}
+td{
+     background-color: #fff;
+}
+th{
+     background-color: #fff;
+}
+#row1 td{
+    background-color: #DCE5EE;
+}

@@ -1,13 +1,48 @@
+<?php include ('header.php');?>
+    <script>
+        function confirmDelete(noteId){
+            var r = confirm('Are you sure?');
+            var url = window.location.pathname; 
+            var pathArray = url.split('/'); // <-- no need in "string()" 
+            var host = pathArray[0]; 
+            var newHost = 'deleteNote.php?id='+noteId; 
+            if (r == true) { window.location = host + newHost; 
+                            //document.location.href = '/headquarters/designReset';
+                           }
+                            else { alert('it didnt work'); } 
+                            return false;
+        }
+    </script>
+	<header class="mainheader">
+		<nav><ul>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="reg.php">Register</a></li>
+			<li><a href="#">login</a></li>
 
-<!-------------------------------------------------------- ////////////////////////////////////// -------------------------------->
+		</ul></nav>
+	</header>
+	
+	<div class="maincontent">
+		<div class ="content">
+			<article class="topcontent">
+				<header>
+					<!--<h2><a href="#" title="First post">First post</a></h2>-->
+				</header>
+				
+				<footer>
+					<p class ="post-info">
+				</footer>
+				
+				<content>
+					<p class="p">
+                        	<?php
+        
+			
 
-		<?php
-    	
-			include("header.php");
 			include("functions.php"); 
 			
 			$connection = OpenDB();
-    //      session_start();
+          session_start();
            $userId =  $_SESSION['userId']; 
                
 			
@@ -20,34 +55,7 @@
 			mysql_close($connection);
             //$title = $_POST['title'];
 		?>
-
-
-
-
-<body class="body">
-
-	<header class="mainheader">
-		<nav><ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="note.php">Create New Note</a></li>
-			<li><a href="logout.php">Logout</a></li>
-
-		</ul></nav>
-	</header>
 	
-	<div class="maincontent">
-		<div class ="content">
-			<article class="topcontent">
-				<header>
-					<!--<h2><a href="#" title="First post">First post</a></h2>-->
-				</header>
-				
-				<footer> 
-					<p class ="post-info">
-				</footer>
-				
-				<content>
-			
 			<form action="deleteNote.php" method="post">
 			<table border="1">
 
@@ -57,7 +65,10 @@
 				<th>Title</th>
 				<th>Edit</th>
 				<th>Delete</th>
-
+				
+				
+				
+			
 				</tr>
 			
 				<?php
@@ -67,41 +78,64 @@
 							echo('<td><input type="checkbox" name="id[]" value="'.$row['id'].'"/></td>'); 
 							echo('<td><a href="viewNote.php?id='.$row['id'].'">'.$row['title'].'</a></td>');
 						//	echo("<td>".$row['noteText']."</td>");
-							echo('<td><a href="editNote.php?id='.$row['id'].'"><img src="img/pencil.png"width="40px" height="40px"></a></td>');
-							echo('<td><a href="deleteNote.php?id='.$row['id'].'"><img src="img/bin.jpg"width="40px" height="40px"></a></td>');
+							echo('<td><a href="editNote.php?id='.$row['id'].'"><img class="t" src="img/pencil.png"width="30px"></a></td>');
+							echo('<td><a onclick = "return confirmDelete('.$row['id'].')" href="#"><img class="t" src="img/bin.jpg"width="30px"></a></td>'); 
 					
 						echo("</tr>");
 					}
 				?>
 			
 			</table>
-                 
+                    <button><a href="note.php">Create New Note</a></button>
                    
-					<input type="submit" value="Delete"/>  
-
+					<input type="submit" value="delete"/>  
+                  <button>  <a href="login.php">Logout</a></button>
 		</form>
 
-	                  
-	
-	</body>
-</html>
-					
 						
 				</content>
 			</article>
 			
-			<article class="bottomcontent">
-				<p>Go Away!!!!!</p>
+			<!--article class="bottomcontent">
+				<header>
 				
-	       
-			</article>
+				</header>
+				
+				<footer>
+					<p class ="post-info"></p>
+				</footer>
+				
+				<content><p class="p">
+					Allow us to show you the way…
+
+We understand that choosing a career can be a difficult and daunting task, and finding the right information to assist you in making an informed decision isn’t easy.
+
+That is why IT varsity offers you absolutely free career guidance. On this page we’ve listed a few of the most commonly asked questions regarding careers, along with our answers in plain and simple language.
+
+If you have a question that is not here, please feel free to contact us to chat – we will be happy to assist!
+
+For a quick read on the subject of IT careers, check out our Infographic: Why IT at IT varsity?</p>
+				</content>
+			</article-->
+
 		</div>
 	</div>
-	
+	<aside class="top-sidebar">
+		<article>
+             <p><a href="#">Download notesplus</a></p>    
+
+		</article>
+	</aside>
 	
 	<aside class="middle-sidebar">
         
-
+		<article>
+		<img class="bootcamp" src="img/bt.jpg">
+		</article>
+        <img class="social" src="img/facebook.jpg">
+        <img class="social" src="img/twitter.jpg">
+        <img class="social" src="img/whatsapp.jpg">
+        
         
 	</aside>
 	
@@ -112,3 +146,4 @@
 </body>
 
 </html>
+

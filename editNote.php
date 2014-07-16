@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Notes Plus</title>
-	<meta charset="utf-8"/>
-	<link rel="stylesheet" href="style.css" type="text/css"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body class="body">
+<?php include('header.php');
+    include('functions.php');
+?>
 
 	<header class="mainheader">
 		<nav><ul>
@@ -31,11 +24,7 @@
 				
 				<content>
 					<p class="p">
-                        	<?php
-
-            include 'header.php';
-			include 'functions.php';  
-		
+<?php 
 			$connection = openDB();
 			//session_start();
            //$userId =  $_SESSION['userId'];

@@ -1,4 +1,6 @@
-<?php include ('header.php');?>
+<?php   include('header.php');
+        include('functions.php');
+?>
 	<header class="mainheader">
 		<nav><ul>
 			<li><a href="index.php">Home</a></li>
@@ -22,8 +24,7 @@
 				<content>
 					<p class="p">
                         	<?php
-                include 'functions.php';
-		      include 'Header.php';
+              
 		
 			
 			
@@ -59,28 +60,7 @@
 				</content>
 			</article>
 			
-			<!--article class="bottomcontent">
-				<header>
-				
-				</header>
-				
-				<footer>
-					<p class ="post-info"></p>
-				</footer>
-				
-				<content><p class="p">
-					Allow us to show you the way…
-
-We understand that choosing a career can be a difficult and daunting task, and finding the right information to assist you in making an informed decision isn’t easy.
-
-That is why IT varsity offers you absolutely free career guidance. On this page we’ve listed a few of the most commonly asked questions regarding careers, along with our answers in plain and simple language.
-
-If you have a question that is not here, please feel free to contact us to chat – we will be happy to assist!
-
-For a quick read on the subject of IT careers, check out our Infographic: Why IT at IT varsity?</p>
-				</content>
-			</article-->
-
+			
 		</div>
 	</div>
 	<aside class="top-sidebar">

@@ -17,7 +17,7 @@
 		<nav><ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="reg.php">Register</a></li>
-			<li><a href="#">login</a></li>
+			<li><a href="logout.php">Logout</a></li>
 
 		</ul></nav>
 	</header>
@@ -42,7 +42,7 @@
 			include("functions.php"); 
 			
 			$connection = OpenDB();
-          session_start();
+        
            $userId =  $_SESSION['userId']; 
                
 			

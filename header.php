@@ -1,7 +1,7 @@
 <?php
         session_start();
 			if(!isset($_SESSION['isLoggedIn'])){
-				header("Location:localhost/notesplus/loginform.php");
+				header("Location:login.php");
 			}
        
 ?>

@@ -2,9 +2,9 @@
 
 		<?php
 		if(!isset($_POST['username'])){
-			//header('location: login_forms.php');
 		}
 		include 'functions.php';
+		include 'header.php';
 		
 		$connection = openDB();
 	

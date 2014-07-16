@@ -1,3 +1,11 @@
+<?php
+        session_start();
+			if(!isset($_SESSION['isLoggedIn'])){
+				header("Location:localhost/notesplus/loginform.php");
+			}
+       
+?>
+
 <!doctype html>
 <html lang="en-us">
 <head>

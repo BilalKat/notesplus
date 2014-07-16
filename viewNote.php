@@ -1,4 +1,27 @@
-<?php
+
+<body class="body">
+
+	<header class="mainheader">
+		<nav><ul>
+			<li><a href="showNotes.php">Home</a></li>
+			<li><a href="login.php" >Logout</a></li>
+
+		</ul></nav>
+	</header>
+	
+	<div class="maincontent">
+		<div class ="content">
+			<article class="topcontent">
+				<header>
+					<!--<h2><a href="#" title="First post">First post</a></h2>-->
+				</header>
+				
+				<footer> 
+					<p class ="post-info">
+				</footer>
+				
+				<content>
+					<p class="p"><?php
 
             include 'header.php';
 			include 'functions.php';  
@@ -33,12 +56,36 @@
 				</tr>
 					<tr>
 				<td colspan="2" align="center">
-					<a href="showNotes.php">Back</a>&nbsp;&nbsp;&nbsp;
-					<a href="note.php">Add new note</a>
-				</td>
+				<!--	<button><a href="showNotes.php">Back</a></button>&nbsp;&nbsp;&nbsp; -->
+					<button><a href="editNote.php?id=<?php echo $id;?>">Edit</a></button> 
+				</td> 
 				</tr>
 			</table>
 		</form>
+					
+						
+				</content>
+			</article>
+			
+			<article class="bottomcontent">
+				<p>Go Away!!!!!</p>
+				
+	       
+			</article>
+		</div>
+	</div>
 	
-	</body>
+	
+	<aside class="middle-sidebar">
+        
+
+        
+	</aside>
+	
+
+	<footer class="mainfooter">
+   <p class="p">copyright&copy ITvarsity bootcamp 2014 (Sahal Motala , Haroon Vankra)</p>
+	</footer>
+</body>
+
 </html>

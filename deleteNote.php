@@ -30,6 +30,6 @@
 			}
 ?>
 		<p><?php echo $message;?></p>
-		<a href="showNotes.php">back to Notes</a>
+		<button><a href="showNotes.php">back to Notes</a></button>
 	</body>
 </html>

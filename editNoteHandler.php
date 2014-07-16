@@ -16,7 +16,7 @@
 		$result = mysql_query($query)
 		or die("query failed : ".mysql_error());
 		?>
-		<a href="showNotes.php">Confirm edits?</a>
+		<a href="showNotes.php"><b>Confirm edits?</b></a>
 
 	</body>
 	

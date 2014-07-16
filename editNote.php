@@ -1,3 +1,6 @@
+
+<!----    ----- ------ ----- ---- --- --  ////// ////// ////// ////// /////// /////// ///// ---- ----- ------ ------ ------ --   -->
+
 <?php
 
             include 'header.php';
@@ -16,7 +19,21 @@
 			$row = mysql_fetch_array($result);
 	
 ?>
-		<form action="editNoteHandler.php" method="post">
+
+<body class="body">
+
+	<header class="mainheader">
+		<nav><ul> 
+			<li><a href="showNotes.php">Back</a></li>
+			<li><a href="login.php">Logout</a></li>
+			</ul></nav>
+	</header>
+	
+	<div class="maincontent">
+		<div class ="content">
+			<article class="topcontent">
+				<header>
+							<form action="editNoteHandler.php" method="post">
 			<table>
 				<tr>
 					<td><label for="title"></label></td>
@@ -39,6 +56,53 @@
 				</tr>
 			</table>
 		</form>
+				</header>
+				
+				<footer> 
+					<p class ="post-info">
+				</footer>
+				
+				<content>
+					<p class="p">About Notesplus App. About Notesplus App. About Notesplus App. About Notesplus App.
+                                About Notesplus App. About Notesplus App. About Notesplus App. About Notesplus App.</p>
+					
+						
+				</content>
+			</article>
+			
+			<article class="bottomcontent">
+				<p>Go Away!!!!!</p>
+				
+	       
+			</article>
+		</div>
+	</div>
 	
-	</body>
-</html>
+	
+	<aside class="middle-sidebar">
+        
+             
+        
+	</aside>
+	
+
+	<footer class="mainfooter">
+   <p class="p">copyright&copy ITvarsity bootcamp 2014 (Sahal Motala , Haroon Vankra)</p>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,22 @@
+
 <?php include ('header.php');?>
 <form action="reg_handler.php" method="post">
+            <div id="row1">
+<body class="body">
+
+	<header class="mainheader">
+		<nav><ul>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="login.php">Login</a></li>
+			<li><a href="#">Register</a></li>
+
+		</ul></nav>
+	</header>
+	
+	<div class="maincontent">
+		<div class ="content">
+			<article class="topcontent">
+						<form action="reg_handler.php" method="post">
             <div id="row1">
                 <h1>Registration Form</h1>
         <table>    
@@ -44,6 +61,33 @@
             <tr><td> <input type="submit" value="send"></td></tr>
             </table>
                 </div>
-        </form>    
-    </body>
+        </form>   
+					
+						
+				</content>
+			</article>
+				<content>
+	
+			
+			<article class="bottomcontent">
+				<p>Go Away!!!!!</p>
+				
+	       
+			</article>
+		</div>
+	</div>
+	
+	
+	<aside class="middle-sidebar">
+        
+
+        
+	</aside>
+	
+
+	<footer class="mainfooter">
+   <p class="p">copyright&copy ITvarsity bootcamp 2014 (Sahal Motala , Haroon Vankra)</p>
+	</footer>
+</body>
+
 </html>
